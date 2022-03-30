@@ -1,4 +1,7 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@inject Data.QuestionListService service
+@using mylib.Model
+
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">client</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
@@ -14,6 +17,17 @@
                 <span class="oi oi-home" aria-hidden="true"></span> Home
             </NavLink>
         </div>
+        <div class="nav-item px-3">
+            <a class="nav-link">
+                <span class="oi oi-menu" aria-hidden="true"></span>Topics
+            </a>
+        </div>
+        <div class="nav-item px-5">
+            @foreach (var item in topics ?? new Topic[1])
+            {
+                <TopicSide Model="item"></TopicSide>
+            }
+        </div>
     </nav>
 </div>
 
@@ -25,5 +39,13 @@
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+    }
+
+
+    private Topic[]? topics;
+
+    protected override async Task OnInitializedAsync()
+    {
+        topics = await service.GetTopics();
     }
 }

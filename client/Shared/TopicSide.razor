@@ -1,0 +1,25 @@
+﻿@using mylib.Model
+
+@if(Model != null)
+{
+<a class="nav-link" href="@string.Format("topic/{0}", Model.TopicId)">
+    <span class="oi oi-list-rich" aria-hidden="true"></span>&nbsp;&nbsp;@Model.Name
+</a>
+}
+
+@* //Eksempel til answer formatering
+    <div class="container">
+    <div class="row">
+        <div class="col-1 text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/59/59510.png" style="width: 30px;">
+            <p class="text-center">Points</p>
+            <img src="https://s3.us-west-1.wasabisys.com/us-bucket/web-images/uploads/small/116330262488kqdu8dulcyj6jfjcvskkfdj0hgbipg4culxvtftlasbysdltcacf3i9aefzyeh3sic7cjrx95vpxzcmcgkmc9zjolpzx9pgirho.png" style="width: 30px;">
+        </div>
+        <div class="col-11">Answer</div>
+    </div>
+</div>*@
+
+@code {
+    [Parameter] public Topic? Model { get; set; }
+}
+
