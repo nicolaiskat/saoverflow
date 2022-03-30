@@ -1,0 +1,32 @@
+﻿@page "/fetchtopic"
+
+@using client.Data;
+@using mylib.Model;
+@inject QuestionListService service
+
+<h1>Topic List</h1>
+
+@if (topics == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <ol>
+        @foreach (var topic in topics)
+        {
+            <li>
+                @topic.Name
+            </li>
+        }
+    </ol>
+}
+
+@code {
+    private Topic[]? topics;
+
+    protected override async Task OnInitializedAsync()
+    {
+        topics = await service.GetTopics();
+    }    
+}

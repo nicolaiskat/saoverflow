@@ -1,0 +1,12 @@
+/Users/nicolaiskat/Projects/sa-aflevering/mylib/bin/Debug/net6.0/mylib.deps.json
+/Users/nicolaiskat/Projects/sa-aflevering/mylib/bin/Debug/net6.0/mylib.dll
+/Users/nicolaiskat/Projects/sa-aflevering/mylib/bin/Debug/net6.0/mylib.pdb
+/Users/nicolaiskat/Projects/sa-aflevering/mylib/obj/Debug/net6.0/mylib.csproj.AssemblyReference.cache
+/Users/nicolaiskat/Projects/sa-aflevering/mylib/obj/Debug/net6.0/mylib.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nicolaiskat/Projects/sa-aflevering/mylib/obj/Debug/net6.0/mylib.AssemblyInfoInputs.cache
+/Users/nicolaiskat/Projects/sa-aflevering/mylib/obj/Debug/net6.0/mylib.AssemblyInfo.cs
+/Users/nicolaiskat/Projects/sa-aflevering/mylib/obj/Debug/net6.0/mylib.csproj.CoreCompileInputs.cache
+/Users/nicolaiskat/Projects/sa-aflevering/mylib/obj/Debug/net6.0/mylib.dll
+/Users/nicolaiskat/Projects/sa-aflevering/mylib/obj/Debug/net6.0/refint/mylib.dll
+/Users/nicolaiskat/Projects/sa-aflevering/mylib/obj/Debug/net6.0/mylib.pdb
+/Users/nicolaiskat/Projects/sa-aflevering/mylib/obj/Debug/net6.0/ref/mylib.dll
