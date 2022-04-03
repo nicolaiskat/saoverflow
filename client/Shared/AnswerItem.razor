@@ -1,0 +1,53 @@
+﻿@using mylib.Model
+@using client.Data
+@inject QuestionListService service
+
+@if(Model != null) { 
+<div class="row">
+    <div class="col-sm-2">
+        <div class="card-body text-center">
+            <p @onclick="Increment" style="height: 8px;">︿</p>
+            @if (Model.Votes == 0)
+            {
+                <p style="color: black; height: 10px; font-weight: bolder;">@Model.Votes</p>
+            }
+            else if (Model.Votes < 0)
+            {
+                <p style="color: red; height: 10px; font-weight: bolder;">@Model.Votes</p>
+            }
+            else if (Model.Votes > 0)
+            {
+                <p style="color: green; height: 10px; font-weight: bolder;">@Model.Votes</p>
+            }
+            <p @onclick="Decrement">﹀</p>
+        </div>
+    </div>
+    <div class="col-sm-10">
+        <div class="card-body">
+            <p class="card-text">@Model.Text</p>
+            <footer class="blockquote-footer"><cite title="Username">@Model.Username</cite></footer>
+        </div>
+    </div>
+</div>
+}
+
+@code {
+    [Parameter] public Answer Model { get; set; }
+
+    private async void Increment()
+    {
+        Model.IncrementVotes();
+        service.IncrementVotes(Model.AnswerId, AnswerOrQuestion.answers);
+        await OnInitializedAsync();
+    }
+
+    
+    private async void Decrement()
+    {
+        Model.DecrementVotes();
+        service.DecrementVotes(Model.AnswerId, AnswerOrQuestion.answers);
+        await OnInitializedAsync();
+    }
+    
+}
+

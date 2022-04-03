@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yStHprREX2SCD+VHvGlh+wa0neshEdF95NzgDkc3EfE=",
+  "Hash": "rx80GreHL2oVTSwrIc9TEK+8UvPUf9bqP/I6VbVMhak=",
   "Source": "client",
   "BasePath": "/",
   "Mode": "Root",
@@ -7223,6 +7223,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/nicolaiskat/Projects/sa-aflevering/client/wwwroot/manifest.json",
+      "SourceId": "client",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolaiskat/Projects/sa-aflevering/client/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "manifest.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/manifest.json"
+    },
+    {
+      "Identity": "/Users/nicolaiskat/Projects/sa-aflevering/client/wwwroot/service-worker.js",
+      "SourceId": "client",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolaiskat/Projects/sa-aflevering/client/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "service-worker.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/service-worker.js"
+    },
+    {
+      "Identity": "/Users/nicolaiskat/Projects/sa-aflevering/client/wwwroot/service-worker.published.js",
+      "SourceId": "client",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolaiskat/Projects/sa-aflevering/client/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "service-worker.published.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/service-worker.published.js"
     }
   ]
 }

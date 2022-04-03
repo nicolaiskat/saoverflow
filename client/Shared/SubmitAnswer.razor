@@ -1,0 +1,42 @@
+﻿@using mylib.Model
+@using client.Data
+@inject QuestionListService service
+
+<EditForm Model="@answer" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="card">
+        <div class="card-header">
+            Submit new answer
+        </div>
+        <div class="mb-3 card-text">
+            <label for="exampleFormControlInput1" class="form-label" style="padding-left: 13px;">Username</label>
+            <InputText @bind-Value="answer.Username" type="text" class="form-control" id="exampleFormControlInput1"
+                       placeholder="Example: firstname + lastname: johndoe"
+                       @onchange="@((ChangeEventArgs e) => answer.Username = e?.Value?.ToString())" />
+        </div>
+        <div class="mb-3 card-text">
+            <label for="exampleFormControlTextarea1" class="form-label" style="padding-left: 13px;">Your answer</label>
+            <InputTextArea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                           placeholder="Answer for question" @bind-Value="@answer.Text"
+                           @onchange="@((ChangeEventArgs e) => answer.Text = e?.Value?.ToString())"></InputTextArea>
+        </div>
+        <button onclick="" class="btn btn-primary" type="submit">Submit</button>
+    </div>
+
+</EditForm>
+
+
+@code {
+    private Answer answer { get; set; } = new();
+
+    [Parameter]
+    public EventCallback<Answer> OnSubtmitCallback { get; set; }
+
+    private void HandleValidSubmit()
+    {
+        OnSubtmitCallback.InvokeAsync(answer);
+        answer = new();
+    }
+}
+

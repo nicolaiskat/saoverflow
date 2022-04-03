@@ -68,6 +68,9 @@ app.UseStaticFiles(new StaticFileOptions()
     ServeUnknownFileTypes = true
 });
 
+// Ved page-refresh taber den ikke index indhold
+app.MapFallbackToFile("index.html");
+
 // Seed data hvis nødvendigt
 using (var scope = app.Services.CreateScope())
 {

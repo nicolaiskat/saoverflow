@@ -1,0 +1,55 @@
+﻿@page "/topics/{id:int}/questions"
+@inject client.Data.QuestionListService service
+@using mylib.Model
+
+<div class="card">
+    <div class="card-header">
+        Questions
+    </div>
+    @foreach (var item in questions ?? new Question[1])
+        {
+        @if (item != null)
+                item.Topic = new Topic{ TopicId = (long)id };
+            <QuestionItem Model="item"></QuestionItem>
+            <a href="@string.Format("topics/{0}/questions/{1}", topic?.TopicId, item?.QuestionId)" class="btn btn-primary">Go to question</a>
+        }
+</div>
+
+<br />
+<br />
+
+<SubmitQuestion OnSubtmitCallback="HandleSubmitQuestionCallback"></SubmitQuestion>
+
+@code {
+    [Parameter] public int id { get; set; }
+    private Topic? topic;
+    private Question[]? questions;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        topic = await service.GetTopicById(id);
+        questions = topic?.Questions.ToArray();
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await OnInitializedAsync();
+    }
+
+    private async void HandleSubmitQuestionCallback(Question q)
+    {
+        if (topic != null)
+        {
+            Topic topicTemp = new() { TopicId = topic.TopicId };
+            Question newQuestion = new(q.Username, q.Title, q.Text, topicTemp);
+
+            Array.Resize(ref questions, questions.Length + 1);
+            questions[questions.GetUpperBound(0)] = newQuestion;
+
+            service.PostNewQuestion(newQuestion);
+            await OnInitializedAsync();
+        }
+
+    }
+    }

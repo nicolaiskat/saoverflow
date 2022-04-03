@@ -1,0 +1,48 @@
+﻿@using mylib.Model
+@using client.Data
+@inject QuestionListService service
+
+<EditForm Model="@question" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="card">
+        <div class="card-header">
+            Submit new question
+        </div>
+        <div class="mb-3 card-text">
+            <label for="exampleFormControlInput1" class="form-label" style="padding-left: 13px;">Username</label>
+            <InputText @bind-Value="question.Username" type="text" class="form-control" id="exampleFormControlInput1"
+                       placeholder="Example: firstname + lastname: johndoe"
+                       @onchange="@((ChangeEventArgs e) => question.Username = e?.Value?.ToString())" />
+        </div>
+        <div class="mb-3 card-text">
+            <label for="exampleFormControlInput1" class="form-label" style="padding-left: 13px;">Title</label>
+            <InputText @bind-Value="question.Title" type="text" class="form-control" id="exampleFormControlInput1"
+                       placeholder="Example: Coding languages"
+                       @onchange="@((ChangeEventArgs e) => question.Title = e?.Value?.ToString())" />
+        </div>
+        <div class="mb-3 card-text">
+            <label for="exampleFormControlTextarea1" class="form-label" style="padding-left: 13px;">Your question in details</label>
+            <InputTextArea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                           placeholder="What are your prefered coding languages to use?" @bind-Value="@question.Text"
+                           @onchange="@((ChangeEventArgs e) => question.Text = e?.Value?.ToString())"></InputTextArea>
+        </div>
+        <button onclick="" class="btn btn-primary" type="submit">Submit</button>
+    </div>
+
+</EditForm>
+
+
+@code {
+    private Question question { get; set; } = new();
+
+    [Parameter]
+    public EventCallback<Question> OnSubtmitCallback { get; set; }
+
+    private void HandleValidSubmit()
+    {
+        OnSubtmitCallback.InvokeAsync(question);
+        question = new();
+    }
+}
+

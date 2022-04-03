@@ -22,8 +22,36 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/nicolaiskat/Projects/sa-aflevering/client/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/nicolaiskat/Projects/sa-aflevering/client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nicolaiskat/Projects/sa-aflevering/client/Pages/QuestionDetailed.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUXVlc3Rpb25EZXRhaWxlZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nicolaiskat/Projects/sa-aflevering/client/Pages/QuestionList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUXVlc3Rpb25MaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nicolaiskat/Projects/sa-aflevering/client/Shared/AnswerItem.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0Fuc3dlckl0ZW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nicolaiskat/Projects/sa-aflevering/client/Shared/QuestionItem.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1F1ZXN0aW9uSXRlbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nicolaiskat/Projects/sa-aflevering/client/Shared/SubmitAnswer.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1Ym1pdEFuc3dlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nicolaiskat/Projects/sa-aflevering/client/Shared/SubmitQuestion.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1Ym1pdFF1ZXN0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/nicolaiskat/Projects/sa-aflevering/client/Shared/TopicSide.razor]

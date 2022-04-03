@@ -1,3 +1,4 @@
+/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/client.staticwebassets.runtime.json
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/appsettings.Development.json
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/appsettings.json
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/server.staticwebassets.runtime.json
@@ -7,7 +8,13 @@
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/server.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/server.pdb
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Humanizer.dll
+/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.AspNetCore.Authorization.dll
+/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.AspNetCore.Components.dll
+/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.AspNetCore.Components.Forms.dll
+/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.AspNetCore.Components.Web.dll
+/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.AspNetCore.Components.WebAssembly.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.AspNetCore.Metadata.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.Data.Sqlite.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -16,6 +23,9 @@
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Sqlite.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
+/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.JSInterop.dll
+/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.JSInterop.WebAssembly.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.OpenApi.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/SQLitePCLRaw.batteries_v2.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/SQLitePCLRaw.core.dll
@@ -23,6 +33,7 @@
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/System.IO.Pipelines.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/runtimes/alpine-x64/native/libe_sqlite3.so
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/runtimes/linux-arm/native/libe_sqlite3.so
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/runtimes/linux-arm64/native/libe_sqlite3.so
@@ -38,8 +49,10 @@
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/runtimes/win-x64/native/e_sqlite3.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/runtimes/win-x86/native/e_sqlite3.dll
+/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/client.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/mylib.dll
 /Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/mylib.pdb
+/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/client.pdb
 /Users/nicolaiskat/Projects/sa-aflevering/server/obj/Debug/net6.0/server.csproj.AssemblyReference.cache
 /Users/nicolaiskat/Projects/sa-aflevering/server/obj/Debug/net6.0/server.GeneratedMSBuildEditorConfig.editorconfig
 /Users/nicolaiskat/Projects/sa-aflevering/server/obj/Debug/net6.0/server.AssemblyInfoInputs.cache
@@ -56,16 +69,3 @@
 /Users/nicolaiskat/Projects/sa-aflevering/server/obj/Debug/net6.0/server.pdb
 /Users/nicolaiskat/Projects/sa-aflevering/server/obj/Debug/net6.0/server.genruntimeconfig.cache
 /Users/nicolaiskat/Projects/sa-aflevering/server/obj/Debug/net6.0/ref/server.dll
-/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/client.staticwebassets.runtime.json
-/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/client.dll
-/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.AspNetCore.Components.WebAssembly.dll
-/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.JSInterop.WebAssembly.dll
-/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/client.pdb
-/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.AspNetCore.Authorization.dll
-/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.AspNetCore.Components.dll
-/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.AspNetCore.Components.Forms.dll
-/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.AspNetCore.Components.Web.dll
-/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.AspNetCore.Metadata.dll
-/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
-/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/Microsoft.JSInterop.dll
-/Users/nicolaiskat/Projects/sa-aflevering/server/bin/Debug/net6.0/System.IO.Pipelines.dll

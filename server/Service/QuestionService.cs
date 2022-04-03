@@ -60,7 +60,7 @@ namespace server.Service
         }
 
         // Get question by id (incl. list answer, answer sorted by votes)
-        public Question GetQuestionById(long id)
+        public Question? GetQuestionById(long id)
         {
             var result = db.Questions
                 .Where(question => question.QuestionId == id)
@@ -84,7 +84,7 @@ namespace server.Service
         }
 
         // Get topic by id (incl. list question(first 15, sorted by date))
-        public Topic GetTopicById(long id)
+        public Topic? GetTopicById(long id)
         {
             var result = db.Topics
                 .Where(topic => topic.TopicId == id)
@@ -104,7 +104,7 @@ namespace server.Service
             if (topic == null)
                 return JsonSerializer.Serialize(new { msg = "Topic not found"});
 
-            Question q = new Question(username, title, text, topic);
+            Question q = new (username, title, text, topic);
             db.Questions.Add(q);
             db.SaveChanges();
             return JsonSerializer.Serialize(new {msg = "New question created", newQuestion = q});
@@ -117,7 +117,7 @@ namespace server.Service
             if (question == null)
                 return JsonSerializer.Serialize(new { msg = "Question not found" });
 
-            Answer a = new Answer(username, text, question);
+            Answer a = new (username, text, question);
             db.Answers.Add(a);
             db.SaveChanges();
             return JsonSerializer.Serialize(new { msg = "New answer created", newAnswer = a });
@@ -148,7 +148,6 @@ namespace server.Service
             return JsonSerializer.Serialize(new { msg = "Vote decremented" });
         }
         
-        
         // Put answer vote increment : void
         public string AVoteIncrement(long answerId)
         {
@@ -160,8 +159,7 @@ namespace server.Service
             db.SaveChanges();
             return JsonSerializer.Serialize(new { msg = "Vote incremented" });
         }
-        
-        
+
         // Put answer vote decrement : void
         public string AVoteDecrement(long answerId)
         {

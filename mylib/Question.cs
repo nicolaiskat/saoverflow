@@ -1,4 +1,6 @@
-﻿namespace mylib.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace mylib.Model
 {
     public class Question
     {
@@ -17,10 +19,14 @@
         public long QuestionId { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        [Required, StringLength(16, ErrorMessage = "Username too long (16 character limit).")]
         public string? Username { get; set; }
 
+        [Required]
         public string? Title { get; set; }
 
+        [Required]
         public string? Text { get; set; }
 
         public int Votes { get; set; } = 0;

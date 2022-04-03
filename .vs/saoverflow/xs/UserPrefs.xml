@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{4DCF90A9-58A3-43AD-9870-6D677B8CDB5D}|Default">
+  <MonoDevelop.Ide.ItemProperties.server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="All" Name="All">
+      <Items>
+        <StartupItem ItemId="{A6E97847-B092-46F4-ACF4-1704EF5664F2}" ItemName="client" ConfigurationId="Default" />
+        <StartupItem ItemId="{4DCF90A9-58A3-43AD-9870-6D677B8CDB5D}" ItemName="server" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+    <MultiItemSolutionRunConfiguration Id="Client" Name="Client">
+      <Items>
+        <StartupItem ItemId="{A6E97847-B092-46F4-ACF4-1704EF5664F2}" ItemName="client" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.Workbench ActiveDocument="client/client.csproj">
+    <Files>
+      <File FileName="client/client.csproj" Line="23" Column="15" />
+      <File FileName="client/Properties/launchSettings.json" Line="5" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="saoverflow" expanded="True">
+            <Node name="server" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

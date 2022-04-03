@@ -1,0 +1,60 @@
+﻿@page "/topics/{id:int}/questions/{questionid:int}"
+@inject client.Data.QuestionListService service
+@using mylib.Model
+
+<div class="card">
+    <div class="card-header">
+        Question
+    </div>
+    @if (question != null)
+    {
+        <QuestionItem Model="question"></QuestionItem>
+    }
+</div>
+
+<br/>
+
+<div class="card">
+    <div class="card-header">
+        Answers
+    </div>
+    @foreach (var item in question?.Answers ?? new List<Answer>())
+    {
+        <AnswerItem Model="item"></AnswerItem>
+    }
+</div>
+
+<br/>
+<br/>
+
+<SubmitAnswer OnSubtmitCallback="HandleSubmitAnswerCallback"></SubmitAnswer>
+
+
+@code {
+    [Parameter] public int id { get; set; }
+    [Parameter] public int questionid { get; set; }
+    private Question? question;
+
+    protected override async Task OnInitializedAsync()
+    {
+        question = await service.GetQuestionById(questionid);
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await OnInitializedAsync();
+    }
+
+    private async void HandleSubmitAnswerCallback(Answer a)
+    {
+        if (question != null)
+        {
+            Question questionTemp = new() { QuestionId = question.QuestionId };
+            Answer newAnswer = new(a.Username, a.Text, questionTemp);
+
+            question?.Answers.Add(newAnswer);
+            service.PostNewAnswer(newAnswer);
+            await OnInitializedAsync();
+        }
+    }
+}

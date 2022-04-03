@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H3/N4BHGhHo9CtaPDtPDxyWGrV8imi4/kkji397aJsA=",
+  "Hash": "hPm7m4wxxPFDGQsspDKTXs3Ub6fgBWfnnJcfhB8FBDk=",
   "Source": "server",
   "BasePath": "_content/server",
   "Mode": "Default",
@@ -11,11 +11,11 @@
       "Version": 2,
       "Source": "client",
       "GetPublishAssetsTargets": "ComputeFilesToPublish;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;_PublishingBlazorWasmProject=true",
-      "AdditionalPublishPropertiesToRemove": "NoBuild;RuntimeIdentifier;WebPublishProfileFile;TargetFramework",
+      "AdditionalPublishProperties": "BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;_PublishingBlazorWasmProject=true;Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "NoBuild;RuntimeIdentifier;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework"
     }
   ],
   "DiscoveryPatterns": [
@@ -7225,6 +7225,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/nicolaiskat/Projects/sa-aflevering/client/wwwroot/manifest.json",
+      "SourceId": "client",
+      "SourceType": "Project",
+      "ContentRoot": "/Users/nicolaiskat/Projects/sa-aflevering/client/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "manifest.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/manifest.json"
+    },
+    {
+      "Identity": "/Users/nicolaiskat/Projects/sa-aflevering/client/wwwroot/service-worker.js",
+      "SourceId": "client",
+      "SourceType": "Project",
+      "ContentRoot": "/Users/nicolaiskat/Projects/sa-aflevering/client/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "service-worker.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/service-worker.js"
+    },
+    {
+      "Identity": "/Users/nicolaiskat/Projects/sa-aflevering/client/wwwroot/service-worker.published.js",
+      "SourceId": "client",
+      "SourceType": "Project",
+      "ContentRoot": "/Users/nicolaiskat/Projects/sa-aflevering/client/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "service-worker.published.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/service-worker.published.js"
     }
   ]
 }

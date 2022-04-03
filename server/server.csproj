@@ -17,24 +17,24 @@
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.3" />
   </ItemGroup>
 
-<!--  <ItemGroup>
+  <ItemGroup>
     <None Remove="Data\" />
     <None Remove="Microsoft.EntityFrameworkCore" />
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
     <None Remove="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" />
-  </ItemGroup>-->
+  </ItemGroup>
 
-<!--  <ItemGroup>
+  <ItemGroup>
     <Folder Include="Data\" />
-  </ItemGroup>-->
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\mylib\mylib.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
     <ProjectReference Include="..\client\client.csproj">
-      <Name>client</Name>
-   </ProjectReference>
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>
