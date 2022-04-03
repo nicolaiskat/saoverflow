@@ -282,6 +282,116 @@
         }
       },
       {
+        "HashCode": -1760200814,
+        "Kind": "Components.Component",
+        "Name": "client.Shared.SubmitAnswer",
+        "AssemblyName": "client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SubmitAnswer"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnSubtmitCallback",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<mylib.Model.Answer>",
+            "Metadata": {
+              "Common.PropertyName": "OnSubtmitCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "client.Shared.SubmitAnswer"
+        }
+      },
+      {
+        "HashCode": 1194088506,
+        "Kind": "Components.Component",
+        "Name": "client.Shared.SubmitAnswer",
+        "AssemblyName": "client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "client.Shared.SubmitAnswer"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnSubtmitCallback",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<mylib.Model.Answer>",
+            "Metadata": {
+              "Common.PropertyName": "OnSubtmitCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "client.Shared.SubmitAnswer",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 853879998,
+        "Kind": "Components.Component",
+        "Name": "client.Shared.SubmitQuestion",
+        "AssemblyName": "client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SubmitQuestion"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnSubtmitCallback",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<mylib.Model.Question>",
+            "Metadata": {
+              "Common.PropertyName": "OnSubtmitCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "client.Shared.SubmitQuestion"
+        }
+      },
+      {
+        "HashCode": -50608640,
+        "Kind": "Components.Component",
+        "Name": "client.Shared.SubmitQuestion",
+        "AssemblyName": "client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "client.Shared.SubmitQuestion"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnSubtmitCallback",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<mylib.Model.Question>",
+            "Metadata": {
+              "Common.PropertyName": "OnSubtmitCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "client.Shared.SubmitQuestion",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1642918395,
         "Kind": "Components.Component",
         "Name": "client.Shared.TopicSide",
@@ -513,116 +623,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "client.Shared.QuestionItem",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1760200814,
-        "Kind": "Components.Component",
-        "Name": "client.Shared.SubmitAnswer",
-        "AssemblyName": "client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SubmitAnswer"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "OnSubtmitCallback",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<mylib.Model.Answer>",
-            "Metadata": {
-              "Common.PropertyName": "OnSubtmitCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "client.Shared.SubmitAnswer"
-        }
-      },
-      {
-        "HashCode": 1194088506,
-        "Kind": "Components.Component",
-        "Name": "client.Shared.SubmitAnswer",
-        "AssemblyName": "client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "client.Shared.SubmitAnswer"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "OnSubtmitCallback",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<mylib.Model.Answer>",
-            "Metadata": {
-              "Common.PropertyName": "OnSubtmitCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "client.Shared.SubmitAnswer",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 853879998,
-        "Kind": "Components.Component",
-        "Name": "client.Shared.SubmitQuestion",
-        "AssemblyName": "client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SubmitQuestion"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "OnSubtmitCallback",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<mylib.Model.Question>",
-            "Metadata": {
-              "Common.PropertyName": "OnSubtmitCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "client.Shared.SubmitQuestion"
-        }
-      },
-      {
-        "HashCode": -50608640,
-        "Kind": "Components.Component",
-        "Name": "client.Shared.SubmitQuestion",
-        "AssemblyName": "client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "client.Shared.SubmitQuestion"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "OnSubtmitCallback",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<mylib.Model.Question>",
-            "Metadata": {
-              "Common.PropertyName": "OnSubtmitCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "client.Shared.SubmitQuestion",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
