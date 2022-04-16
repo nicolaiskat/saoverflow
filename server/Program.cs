@@ -99,26 +99,32 @@ app.Use(async (context, next) =>
 });
 
 // Herunder alle endpoints i API'en
-app.MapGet("/api/questions", (QuestionService service) =>
-{
-    return service.GetAllQuestions();
-});
-
-app.MapGet("/api/questions/{id}", (QuestionService service, long id) =>
-{
-    return service.GetQuestionById(id);
-});
-
-
 app.MapGet("/api/topics", (QuestionService service) =>
 {
     return service.GetAllTopics();
+}); 
+
+app.MapGet("/api/questions", (QuestionService service) =>
+{
+    return service.GetAllQuestionsWithoutTopic();
 });
 
 app.MapGet("/api/topics/{id}", (QuestionService service, long id) =>
 {
     return service.GetTopicById(id);
 });
+
+app.MapGet("/api/topics/{topicId}/questions", (QuestionService service, long topicId) =>
+{
+    return service.GetAllQuestions(topicId);
+});
+
+
+app.MapGet("/api/topics/{topicId}/questions/{questionId}", (QuestionService service, long topicId, long questionId) =>
+{
+    return service.GetQuestionById(topicId, questionId);
+});
+
 
 
 
@@ -131,6 +137,7 @@ app.MapPost("/api/answers", (QuestionService service, AnswerApi data) =>
 {
     return service.CreateAnswer(data.username, data.text, data.questionId);
 });
+
 
 
 app.MapPut("/api/questions/incrementvotes", (QuestionService service, QuestionDataId questionId) =>

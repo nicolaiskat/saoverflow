@@ -47,37 +47,13 @@ namespace server.Service
             db.SaveChanges();
         }
 
-        // Get questions(first 15, sorted by date)
-        // Vi vil undgå at have topic og answer til at vise questions
-        public List<Question> GetAllQuestions()
-        {
-            var result = db.Questions
-                .OrderByDescending(question => question.CreatedAt)
-                .Include(question => question.Topic)
-                .Take(15)
-                .ToList();
-            return result;
-        }
 
-        // Get question by id (incl. list answer, answer sorted by votes)
-        public Question? GetQuestionById(long id)
-        {
-            var result = db.Questions
-                .Where(question => question.QuestionId == id)
-                //.Select(question => question.Answers.OrderBy(answer => answer.Votes))
-                .Include(question => question.Topic)
-                .Include(question => question.Answers.OrderByDescending(answer => answer.Votes))
-                .FirstOrDefault();
-            if (result == null)
-                return null;
-            return result;
-        }
+
 
         // Get all topics (sorted by name)
         public List<Topic> GetAllTopics()
         {
             var result = db.Topics
-                .OrderBy(topic => topic.Name)
                 .Include(topic => topic.Questions)
                 .ToList();
             return result;
@@ -88,12 +64,39 @@ namespace server.Service
         {
             var result = db.Topics
                 .Where(topic => topic.TopicId == id)
-                .Include(topic => topic.Questions
-                    .OrderByDescending(questions => questions.CreatedAt)
-                    .Take(15))
+                .Include(topic => topic.Questions)
                 .FirstOrDefault();
             if (result == null)
                 return null;
+            return result;
+        }
+
+        // Get questions(first 15, sorted by date)
+        // Vi vil undgå at have topic og answer til at vise questions
+        public List<Question> GetAllQuestions(long topicId)
+        {
+            var result = db.Questions
+                .Include(question => question.Topic)
+                .Where(question => question.Topic.TopicId == topicId)
+                .ToList();
+            return result;
+        }
+
+        public List<Question> GetAllQuestionsWithoutTopic()
+        {
+            var result = db.Questions
+                .Include(question => question.Topic)
+                .ToList();
+            return result;
+        }
+
+        // Get question by id (incl. list answer, answer sorted by votes)
+        public Question? GetQuestionById(long topicId, long questionId)
+        {
+            var result = GetAllQuestions(topicId)
+                    .Where(question => question.QuestionId == questionId)
+                    .FirstOrDefault();
+
             return result;
         }
 

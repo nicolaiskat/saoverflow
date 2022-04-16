@@ -1,5 +1,6 @@
-﻿<Properties StartupConfiguration="{4DCF90A9-58A3-43AD-9870-6D677B8CDB5D}|Default">
-  <MonoDevelop.Ide.ItemProperties.server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+﻿<Properties StartupConfiguration="{4DCF90A9-58A3-43AD-9870-6D677B8CDB5D}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="All" Name="All">
       <Items>
@@ -13,16 +14,33 @@
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
-  <MonoDevelop.Ide.Workbench ActiveDocument="client/client.csproj">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.Workbench ActiveDocument="mylib/Answer.cs">
     <Files>
-      <File FileName="client/client.csproj" Line="23" Column="15" />
-      <File FileName="client/Properties/launchSettings.json" Line="5" Column="7" />
+      <File FileName="server/Service/QuestionService.cs" Line="83" Column="10" />
+      <File FileName="server/Program.cs" Line="92" Column="13" />
+      <File FileName="client/Shared/AnswerItem.razor" Line="8" Column="42" />
+      <File FileName="client/Shared/SubmitAnswer.razor" Line="38" Column="38" />
+      <File FileName="mylib/Answer.cs" Line="19" Column="1" />
+      <File FileName="client/Pages/QuestionDetailed.razor" Line="1" Column="1" />
+      <File FileName="mylib/Question.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="saoverflow" expanded="True">
-            <Node name="server" selected="True" />
+            <Node name="mylibs" expanded="True">
+              <Node name="mylib" expanded="True">
+                <Node name="Answer.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="client" expanded="True">
+              <Node name="Pages" expanded="True" />
+              <Node name="Shared" expanded="True" />
+            </Node>
+            <Node name="server" expanded="True">
+              <Node name="Service" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -31,9 +49,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.server PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
